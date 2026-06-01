@@ -1,0 +1,122 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+---
+
+<Layout
+	lang="es"
+	title="Hoteles y apartamentos — Gandía, verano de 2026"
+	description="Buscamos hoteles, apartamentos y casas rurales para tu viaje de verano de 2026 — según tu presupuesto y la zona que prefieras. Dinos tu margen y dónde te gustaría despertarte; preseleccionamos, tú eliges, reservamos."
+	otherLangHref="/hotels/"
+	otherLangLabel="English"
+>
+	<p class="eyebrow">Hoteles y apartamentos</p>
+	<h1>Dónde te <span class="accent">alojarás</span></h1>
+	<p class="tagline">
+		Dinos tu presupuesto y dónde te gustaría despertarte — buscamos,
+		preseleccionamos y reservamos.
+	</p>
+
+	<p>
+		Hoteles, apartamentos, <em>casas rurales</em>, villas, resorts
+		familiares — el sitio adecuado depende de dos cosas: <strong>dónde
+		quieres que empiecen tus días</strong> y <strong>cuánto quieres
+		gastar</strong>. Dinos esas dos, y <strong>buscamos por ti</strong> —
+		comparando lo disponible para tus fechas, hablando con las casas que
+		conocemos, armando dos o tres opciones que encajen. Tú eliges;
+		nosotros reservamos la habitación y nos encargamos del resto.
+	</p>
+
+	<h2 class="zone-heading">Dónde buscamos</h2>
+
+	<div class="zone-grid">
+		<article class="zone-card">
+			<h3>Playa de Gandía</h3>
+			<p>Apartamentos frente al mar y resorts familiares en la larga bahía de arena fina — arena suave, paseo marítimo de palmeras, la base más fácil para una semana de playa.</p>
+		</article>
+		<article class="zone-card">
+			<h3>Casco antiguo de Gandía</h3>
+			<p>Pequeños hoteles boutique alrededor del Palau Ducal — caminable, lleno de cafés, vida nocturna que se alarga.</p>
+		</article>
+		<article class="zone-card">
+			<h3>Las calas — Xàbia, Moraira, Calpe, Altea</h3>
+			<p>Villas y apartamentos escondidos sobre las ensenadas — acantilados, pinos, agua turquesa al final de la carretera.</p>
+		</article>
+		<article class="zone-card">
+			<h3>Marina Alta de interior</h3>
+			<p><em>Casas rurales</em> y pequeñas posadas de montaña en Bocairent, la Vall de Gallinera, Tàrbena — noches más frescas, estrellas de verdad, senderos desde la puerta.</p>
+		</article>
+		<article class="zone-card">
+			<h3>Benidorm</h3>
+			<p>Grandes resorts familiares en la Playa de Levante — media hora bajando por la costa, piscinas para niños, opciones todo incluido.</p>
+		</article>
+		<article class="zone-card">
+			<h3>Ciudad de Valencia</h3>
+			<p>Estancias boutique en el casco antiguo — una hora en tren desde Gandía, perfecto para una noche en la ciudad antes o después de la costa.</p>
+		</article>
+	</div>
+
+	<p>
+		<strong>Nos adaptamos a cualquier presupuesto.</strong> Desde
+		apartamentos familiares y resorts cómodos en la franja baja, pasando
+		por hoteles boutique y villas con encanto en el rango medio, hasta
+		suites frente al mar y alquiler de villas completas en la parte
+		alta. Dinos tu margen; te proponemos dos o tres opciones que
+		encajen, con notas honestas sobre cada una.
+	</p>
+
+	<p class="signoff">
+		No reservas a través de un buscador, reservas a través de alguien
+		que conoce la calle.
+	</p>
+
+	<p class="cta-top">
+		<a class="cta" href="/es/#contact">Cuéntanos lo que te gustaría →</a>
+	</p>
+
+	<style>
+		.zone-heading {
+			font-family: Georgia, "Times New Roman", serif;
+			font-size: clamp(1.4rem, 2.6vw, 1.85rem);
+			font-weight: 700;
+			letter-spacing: -0.01em;
+			margin: 2.8rem 0 1.4rem;
+			color: var(--accent);
+			text-align: center;
+		}
+		.zone-grid {
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+			gap: 1.1rem;
+			margin: 0 0 2.6rem;
+		}
+		.zone-card {
+			background: var(--paper);
+			border: 1px solid var(--rule);
+			border-radius: 10px;
+			padding: 1.4rem 1.4rem 1.2rem;
+			box-shadow: 0 2px 12px rgba(31, 27, 22, 0.06);
+			transition: transform 0.2s ease, box-shadow 0.2s ease;
+		}
+		.zone-card:hover {
+			transform: translateY(-3px);
+			box-shadow: 0 10px 26px rgba(31, 27, 22, 0.12);
+		}
+		.zone-card h3 {
+			font-family: Georgia, "Times New Roman", serif;
+			font-size: 1.12rem;
+			font-weight: 700;
+			margin: 0 0 0.5rem;
+			letter-spacing: -0.01em;
+			color: var(--ink);
+		}
+		.zone-card p {
+			font-size: 0.95rem;
+			color: var(--muted);
+			margin: 0;
+			line-height: 1.55;
+		}
+		@media (max-width: 640px) {
+			.zone-grid { grid-template-columns: 1fr; }
+		}
+	</style>
+</Layout>

@@ -1,0 +1,114 @@
+---
+import Layout from '../../layouts/Layout.astro';
+---
+
+<Layout
+	lang="en"
+	title="Activities — Gandía, summer 2026"
+	description="What you can do on a tailor-made summer 2026 holiday on Spain's Mediterranean coast — beaches and calas, cycling, hiking, food and wine, day trips to Valencia and Guadalest, and the mid-August astronomical phenomena: the Perseids and the total solar eclipse on 12 August."
+	otherLangHref="/es/actividades/"
+	otherLangLabel="Español"
+>
+	<p class="eyebrow">Activities</p>
+	<h1>What you'll <span class="accent">do</span></h1>
+	<p class="tagline">
+		Tell us how you imagine your days — we plan around them.
+	</p>
+
+	<p>
+		Some travellers want long beach days and lazy swims; others want
+		mountain passes by bike, summit walks, or three-hour lunches at a
+		village restaurant. Most want a mix. <strong>Tell us what kind of
+		days you'd love</strong> — and what you'd skip — and we put together
+		the itinerary around your dates, your pace and your party. Below, a
+		sense of what's on offer in this corner of Spain.
+	</p>
+
+	<div class="activity-grid">
+		<article class="activity-card">
+			<h3>Sea & calas</h3>
+			<p>Long beach days at Playa de Gandía, snorkelling and kayaking in the hidden coves of the Marina Alta, boat trips out to sea caves, late-afternoon swims off the rocks.</p>
+		</article>
+		<article class="activity-card">
+			<h3>Cycling — road & mountain</h3>
+			<p>Warm climbs to Coll de Rates and Puerto de Tudons on quiet asphalt, mountain-bike tracks above Dénia and Pego, rentals and routes that fit your level.</p>
+		</article>
+		<article class="activity-card">
+			<h3>Hiking & trail running</h3>
+			<p>Marked GR and PR trails between mountain villages, summit paths with the whole coast at your feet, and a busy calendar of trail-running races in spring and autumn.</p>
+		</article>
+		<article class="activity-card">
+			<h3>Food & wine</h3>
+			<p>Paella at a <em>barraca</em> by the sea, fideuá in a fishing port, tapas in Gandía's old town, mountain-village restaurants with the menu on a chalkboard, the sweet wines of Xaló.</p>
+		</article>
+		<article class="activity-card">
+			<h3>Day trips</h3>
+			<p>Valencia city by train, the rice fields and boats of the Albufera, El Castell de Guadalest above the turquoise reservoir, the fishing-port nights of Dénia.</p>
+		</article>
+		<article class="activity-card">
+			<h3>Astronomical phenomena</h3>
+			<p>Mid-August brings two extraordinary nights: the <strong>Perseid meteor shower</strong> peaking 11–13 August, and a <strong>total solar eclipse at sunset on 12 August</strong>, with the path of totality just north of Gandía. We know the dark spots inland for the Perseids and the right place to stand for totality — and if you'd rather not drive, we take you.</p>
+		</article>
+		<article class="activity-card">
+			<h3>Family days</h3>
+			<p>Shallow swims at Playa Norte, kid-friendly resorts with pools, the Bioparc and the Oceanogràfic in Valencia, ice creams on the promenade as the sun goes down.</p>
+		</article>
+		<article class="activity-card">
+			<h3>Slow days</h3>
+			<p>Village markets, terraces with a coffee that lasts an hour, an unhurried lunch, a siesta, a swim, a long evening walk. The kind of day this coast was made for.</p>
+		</article>
+	</div>
+
+	<p>
+		<strong>Family, slow, active, adventurous, romantic, social — tell
+		us the shape of the days you want.</strong> We come back with a
+		plan: where to go each day, what's worth your time, what to skip,
+		plus the reservations and tickets that need booking ahead.
+	</p>
+
+	<p class="signoff">
+		You arrive — your days are already set up.
+	</p>
+
+	<p class="cta-top">
+		<a class="cta" href="/#contact">Tell us how you imagine it →</a>
+	</p>
+
+	<style>
+		.activity-grid {
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+			gap: 1.1rem;
+			margin: 2.4rem 0 2.6rem;
+		}
+		.activity-card {
+			background: var(--paper);
+			border: 1px solid var(--rule);
+			border-radius: 10px;
+			padding: 1.4rem 1.4rem 1.2rem;
+			box-shadow: 0 2px 12px rgba(31, 27, 22, 0.06);
+			transition: transform 0.2s ease, box-shadow 0.2s ease;
+		}
+		.activity-card:hover {
+			transform: translateY(-3px);
+			box-shadow: 0 10px 26px rgba(31, 27, 22, 0.12);
+		}
+		.activity-card h3 {
+			font-family: Georgia, "Times New Roman", serif;
+			font-size: 1.15rem;
+			font-weight: 700;
+			margin: 0 0 0.5rem;
+			letter-spacing: -0.01em;
+			color: var(--ink);
+		}
+		.activity-card p {
+			font-size: 0.95rem;
+			color: var(--muted);
+			margin: 0;
+			line-height: 1.55;
+		}
+		@media (max-width: 640px) {
+			.activity-grid { grid-template-columns: 1fr; }
+		}
+	</style>
+</Layout>

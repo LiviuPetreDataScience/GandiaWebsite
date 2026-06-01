@@ -1,0 +1,114 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+---
+
+<Layout
+	lang="es"
+	title="Destinos de montaña — Gandía 2026"
+	description="Destinos de interior detrás de la Costa Blanca — Aitana, Bèrnia, Mariola, ciclismo de carretera y senderos de montaña, pueblos blancos y sierras tranquilas."
+	otherLangHref="/mountain/"
+	otherLangLabel="English"
+>
+	<p class="eyebrow">Destinos de montaña</p>
+	<h1>Hacia la <span class="accent">montaña</span></h1>
+	<p class="tagline">
+		Las sierras tranquilas detrás de la Costa Blanca — pueblos encaramados en
+		la roca, tardes frescas, estrellas de verdad sobre la cabeza.
+	</p>
+
+	<figure class="hero">
+		<img src="/images/mountain-02.jpg" alt="Vista desde un puerto de montaña sobre un valle verde hacia una sierra de picos en la media distancia, con la costa mediterránea al fondo bajo un cielo nublado." />
+	</figure>
+
+	<p>
+		El interior de la Costa Blanca es una sucesión de sierras calcáreas —
+		<strong>Aitana, Bèrnia, Serrella, Mariola, Montgó</strong> — que se
+		levantan filo detrás de la costa y caen en valles largos de bancales. Las
+		carreteras suben a curvas hasta pueblos blancos donde la vida aún sigue
+		el ritmo del pan y la cosecha de almendra. La piedra está en todas
+		partes: en las casas, en los muros de piedra seca que trepan las laderas,
+		en las propias cumbres. Y en algunos lugares — el Montgó, la Bèrnia, la
+		Cumbre del Sol — <strong>la montaña cae directamente al mar</strong>,
+		esculpiendo los pueblos sobre el acantilado, los cabos y las calas
+		escondidas que hacen esta costa irrepetible. Desde los puertos altos, en
+		un día claro, se ve toda.
+	</p>
+
+	<div class="gallery gallery-3">
+		<figure>
+			<img src="/images/mountain-01.jpg" alt="Un pueblo blanco con su campanario al pie de una gran cresta calcárea, terrazas y huertos en primer plano." />
+		</figure>
+		<figure>
+			<img src="/images/mountain-06.jpg" alt="Una joven sentada en una piedra en una cima, mirando crestas y valles boscosos perderse en la bruma." />
+		</figure>
+		<figure>
+			<img src="/images/mountain-07.jpg" alt="Una bahía turquesa que se curva hacia un pueblo costero al atardecer, un cabo rocoso rojizo en primer plano, montañas recortadas en el horizonte." />
+		</figure>
+	</div>
+
+	<p>
+		Para el <strong>ciclismo de carretera</strong> esto es uno de los mejores
+		inviernos de Europa — subidas largas y templadas por el Coll de Rates,
+		el Puerto de Tudons y las carreteras secundarias hacia Famorca y
+		Confrides, asfalto vacío y bajadas de media hora. La <strong>BTT</strong>
+		corre por las pistas calcáreas sobre Dénia y Pego. Los
+		<strong>senderistas</strong> tienen senderos GR y PR sin fin entre los
+		pueblos, sendas de cumbre que recompensan la subida con toda la costa a
+		los pies, y el calendario de <strong>carreras por montaña</strong> pone
+		una prueba en algún rincón de las sierras casi cada fin de semana en
+		primavera y otoño.
+	</p>
+
+	<div class="gallery">
+		<figure>
+			<img src="/images/mountain-03.jpg" alt="Vista aérea de un puerto deportivo lleno de yates blancos, un pueblo costero y crestas montañosas perdiéndose en la bruma." />
+		</figure>
+		<figure>
+			<img src="/images/mountain-04.jpg" alt="Panorámica alta sobre la bahía de Calpe — el Peñón de Ifach a la izquierda, un cabo redondo a la derecha, la ciudad entre ambos, el Mediterráneo brillando abajo." />
+		</figure>
+		<figure>
+			<img src="/images/mountain-05.jpg" alt="Un amplio horizonte de mar visto desde lo alto de un acantilado — pueblos colgados de la roca a izquierda y derecha, matorral verde escaso en primer plano." />
+		</figure>
+		<figure>
+			<img src="/images/mountain-08.jpg" alt="Un caminante en una cima rocosa leyendo un panel de interpretación — un vasto cielo de nubes arriba, sierras alejándose hacia el horizonte y un pueblo costero extendido al fondo." />
+		</figure>
+	</div>
+
+	<p>
+		Y luego los pueblos — <strong>Bocairent</strong>,
+		<strong>Guadalest</strong>, <strong>la Vall de Gallinera</strong>,
+		<strong>Tàrbena</strong>, <strong>Castell de Castells</strong>. Pequeños,
+		cuidados, vividos. Restaurantes familiares minúsculos donde el cocinero
+		es el dueño y el menú del día cabe en una pizarra:
+		<strong>olleta</strong> con judías de montaña,
+		<strong>arròs caldós</strong> con conejo y romero,
+		<strong>embutidos</strong> curados en el pueblo,
+		<strong>coca d'ametla</strong>, los vinos dulces de Xaló. Comida de
+		verdad, hecha como se ha hecho siempre.
+		<strong>Dinos qué quieres pedalear, andar o comer</strong> — nos
+		encargamos de la ruta, del pícnic, de la mesa y de la cama.
+	</p>
+
+	<style>
+		.gallery {
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+			gap: 0.9rem;
+			margin: 2.6rem 0;
+		}
+		.gallery-3 { grid-template-columns: repeat(3, 1fr); }
+		.gallery figure { margin: 0; }
+		.gallery img {
+			width: 100%;
+			height: 100%;
+			aspect-ratio: 4 / 3;
+			object-fit: cover;
+			border-radius: 6px;
+			box-shadow: 0 4px 18px rgba(31, 27, 22, 0.10);
+			display: block;
+		}
+		@media (max-width: 640px) {
+			.gallery { grid-template-columns: 1fr; }
+		}
+	</style>
+</Layout>

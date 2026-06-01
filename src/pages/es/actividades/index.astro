@@ -1,0 +1,115 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+---
+
+<Layout
+	lang="es"
+	title="Actividades — Gandía, verano de 2026"
+	description="Qué puedes hacer en un viaje a medida en verano de 2026 por la costa mediterránea española — playas y calas, ciclismo, senderismo, gastronomía y vino, excursiones a Valencia y Guadalest, y los fenómenos astronómicos de mediados de agosto: las Perseidas y el eclipse total de Sol del 12 de agosto."
+	otherLangHref="/activities/"
+	otherLangLabel="English"
+>
+	<p class="eyebrow">Actividades</p>
+	<h1>Qué <span class="accent">harás</span></h1>
+	<p class="tagline">
+		Cuéntanos cómo imaginas tus días — planificamos a tu alrededor.
+	</p>
+
+	<p>
+		Algunos viajeros quieren días largos de playa y baños lentos; otros
+		prefieren puertos de montaña en bici, sendas de cumbre o comidas de
+		tres horas en un restaurante de pueblo. La mayoría quiere una mezcla.
+		<strong>Cuéntanos qué tipo de días te gustarían</strong> — y qué
+		prefieres saltarte — y armamos el itinerario alrededor de tus fechas,
+		tu ritmo y los que venís. Aquí abajo, una idea de lo que se puede
+		hacer en este rincón de España.
+	</p>
+
+	<div class="activity-grid">
+		<article class="activity-card">
+			<h3>Mar y calas</h3>
+			<p>Días largos en la Playa de Gandía, snorkel y kayak por las calas escondidas de la Marina Alta, salidas en barca a las cuevas marinas, baños al atardecer desde las rocas.</p>
+		</article>
+		<article class="activity-card">
+			<h3>Ciclismo — carretera y montaña</h3>
+			<p>Subidas templadas al Coll de Rates y al Puerto de Tudons por asfalto vacío, pistas de BTT sobre Dénia y Pego, alquileres y rutas adaptadas a tu nivel.</p>
+		</article>
+		<article class="activity-card">
+			<h3>Senderismo y trail running</h3>
+			<p>Senderos GR y PR marcados entre pueblos de montaña, sendas de cumbre con toda la costa a los pies, y un calendario lleno de carreras por montaña en primavera y otoño.</p>
+		</article>
+		<article class="activity-card">
+			<h3>Gastronomía y vino</h3>
+			<p>Paella en una <em>barraca</em> junto al mar, fideuá en un puerto pesquero, tapas en el casco antiguo de Gandía, restaurantes de pueblo de montaña con el menú en una pizarra, los vinos dulces de Xaló.</p>
+		</article>
+		<article class="activity-card">
+			<h3>Excursiones de un día</h3>
+			<p>Valencia ciudad en tren, los arrozales y las barcas de la Albufera, El Castell de Guadalest sobre el embalse turquesa, las noches del puerto pesquero de Dénia.</p>
+		</article>
+		<article class="activity-card">
+			<h3>Fenómenos astronómicos</h3>
+			<p>Mediados de agosto trae dos noches extraordinarias: la <strong>lluvia de las Perseidas</strong> con máximo del 11 al 13 de agosto, y un <strong>eclipse total de Sol al atardecer el 12 de agosto</strong>, con la franja de totalidad justo al norte de Gandía. Conocemos los puntos oscuros tierra adentro para las Perseidas y el sitio adecuado para ver la totalidad — y si prefieres no conducir, te llevamos.</p>
+		</article>
+		<article class="activity-card">
+			<h3>Días en familia</h3>
+			<p>Baños poco profundos en la Playa Norte, resorts con piscinas para niños, el Bioparc y el Oceanogràfic en Valencia, helados en el paseo marítimo a la caída del sol.</p>
+		</article>
+		<article class="activity-card">
+			<h3>Días lentos</h3>
+			<p>Mercados de pueblo, terrazas con un café que dura una hora, una comida sin prisas, una siesta, un baño, un paseo largo al anochecer. El tipo de día para el que existe esta costa.</p>
+		</article>
+	</div>
+
+	<p>
+		<strong>Familiar, lento, activo, aventurero, romántico, social —
+		cuéntanos la forma de los días que quieres.</strong> Volvemos con un
+		plan: dónde ir cada día, qué merece la pena, qué saltarse, más las
+		reservas y entradas que haya que comprar con antelación.
+	</p>
+
+	<p class="signoff">
+		Tú llegas — tus días ya están montados.
+	</p>
+
+	<p class="cta-top">
+		<a class="cta" href="/es/#contact">Cuéntanos cómo lo imaginas →</a>
+	</p>
+
+	<style>
+		.activity-grid {
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+			gap: 1.1rem;
+			margin: 2.4rem 0 2.6rem;
+		}
+		.activity-card {
+			background: var(--paper);
+			border: 1px solid var(--rule);
+			border-radius: 10px;
+			padding: 1.4rem 1.4rem 1.2rem;
+			box-shadow: 0 2px 12px rgba(31, 27, 22, 0.06);
+			transition: transform 0.2s ease, box-shadow 0.2s ease;
+		}
+		.activity-card:hover {
+			transform: translateY(-3px);
+			box-shadow: 0 10px 26px rgba(31, 27, 22, 0.12);
+		}
+		.activity-card h3 {
+			font-family: Georgia, "Times New Roman", serif;
+			font-size: 1.15rem;
+			font-weight: 700;
+			margin: 0 0 0.5rem;
+			letter-spacing: -0.01em;
+			color: var(--ink);
+		}
+		.activity-card p {
+			font-size: 0.95rem;
+			color: var(--muted);
+			margin: 0;
+			line-height: 1.55;
+		}
+		@media (max-width: 640px) {
+			.activity-grid { grid-template-columns: 1fr; }
+		}
+	</style>
+</Layout>

@@ -1,0 +1,117 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+---
+
+<Layout
+	lang="es"
+	title="Destinos de mar — Gandía 2026"
+	description="Destinos costeros en el Mediterráneo español para tu viaje del eclipse — Gandía, Valencia, Benidorm, las calas de la Marina Alta y la Costa Blanca."
+	otherLangHref="/sea/"
+	otherLangLabel="English"
+>
+	<p class="eyebrow">Destinos de mar</p>
+	<h1>Junto al <span class="accent">mar</span></h1>
+	<p class="tagline">
+		La costa mediterránea española — playas largas, aguas cálidas y poco
+		profundas, cenas de pueblo marinero que se alargan hasta tarde.
+	</p>
+
+	<p>
+		Lo más extraordinario de esta costa son las <strong>calas</strong> —
+		pequeñas ensenadas de agua clara, encajadas entre acantilados cubiertos
+		de pinos, justo al sur de las grandes playas. Su belleza es de las que no
+		se repiten, propia de esos rincones estrechos donde <strong>la montaña
+		cae directamente al mar</strong>: una curva en la carretera, un sendero
+		entre los pinos, y de pronto una media luna turquesa atrapada entre dos
+		crestas. La Cala de la Granadella, junto a Xàbia, es la más famosa;
+		varias veces votada la mejor playa de España. Snorkel entre las rocas,
+		kayak hasta las cuevas marinas, una caminata por el sendero del
+		acantilado para verla desde arriba, pícnic a la sombra de los pinos o
+		comida en el chiringuito sobre la cala. Organizamos el equipo, las
+		barcas, el pícnic, la mesa.
+	</p>
+
+	<p>
+		Las calas son sólo la mitad de esta costa. La otra mitad es lo contrario
+		de escondida: kilómetro tras kilómetro de <strong>arena fina y
+		dorada</strong> que corre llana y recta desde Gandía hacia el sur por
+		Daimús, Piles y Oliva, y sigue hasta Dénia. El agua se mete tan poco a
+		poco que puedes caminar cincuenta metros mar adentro y aún hacer pie; la
+		arena es lo bastante suave para cruzarla descalzo a mediodía. En algunos
+		tramos la playa está respaldada por <strong>dunas protegidas</strong> —
+		pasarelas de madera, barrón, casi ningún edificio a la vista. Son las
+		playas para las tardes largas, los paseos largos, los anocheceres
+		largos.
+	</p>
+
+	<div class="gallery gallery-3">
+		<figure>
+			<img src="/images/sand-01.jpg" alt="Una playa larga y amplia de arena, con olas suaves rompiendo, y los edificios del paseo marítimo al fondo." />
+		</figure>
+		<figure>
+			<img src="/images/sand-02.jpg" alt="Arena dorada clara y agua turquesa poco profunda curvándose hacia una ciudad silueteada en la distancia." />
+		</figure>
+		<figure>
+			<img src="/images/sand-03.jpg" alt="Una playa amplia bajo un cielo nublado y dramático, unas pocas personas caminando por la orilla." />
+		</figure>
+	</div>
+
+	<p>
+		Más allá de la Granadella, la costa esconde decenas más — calas
+		<strong>salvajes</strong> a las que sólo se llega a pie, playas
+		<strong>concurridas</strong> con su propio encanto, puertos de pesca,
+		largas franjas de arena tras las dunas. Las imágenes de abajo son de
+		nuestros propios paseos por este tramo. Hemos quitado los nombres a
+		propósito. <strong>Pregúntanos dónde están</strong> — y te llevamos.
+	</p>
+
+	<div class="gallery">
+		<figure>
+			<img src="/images/sea-01.jpg" alt="Una cala rocosa respaldada por altos acantilados de piedra caliza junto al Mediterráneo, una pareja paseando un perro por las piedras." />
+		</figure>
+		<figure>
+			<img src="/images/sea-02.jpg" alt="Casas encaladas sobre una bahía turquesa, vistas desde lo alto del acantilado." />
+		</figure>
+		<figure>
+			<img src="/images/sea-03.jpg" alt="Un velero varado en una orilla rocosa baja, inclinado contra un cielo azul claro." />
+		</figure>
+		<figure>
+			<img src="/images/sea-04.jpg" alt="Un cabo cubierto de pinos asomando al otro lado de una bahía mediterránea en calma." />
+		</figure>
+		<figure>
+			<img src="/images/sea-05.jpg" alt="Una gaviota volando sobre un pequeño faro rojo y blanco al final de un espigón de piedra." />
+		</figure>
+		<figure>
+			<img src="/images/sea-06.jpg" alt="Un puerto pesquero en activo respaldado por una larga cresta montañosa bajo un cielo parcialmente nublado." />
+		</figure>
+		<figure>
+			<img src="/images/sea-07.jpg" alt="Amanecer sobre el Mediterráneo — el sol asomando entre una franja baja de nubes en el horizonte, luz dorada derramándose sobre las olas espumosas." />
+		</figure>
+		<figure>
+			<img src="/images/sea-08.jpg" alt="Un atardecer rosa y lavanda en la playa, el cielo veteado de nubes pastel reflejándose en un arroyo de marea serpenteando por la arena." />
+		</figure>
+	</div>
+
+	<style>
+		.gallery {
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+			gap: 0.9rem;
+			margin: 2.6rem 0;
+		}
+		.gallery-3 { grid-template-columns: repeat(3, 1fr); }
+		.gallery figure { margin: 0; }
+		.gallery img {
+			width: 100%;
+			height: 100%;
+			aspect-ratio: 4 / 3;
+			object-fit: cover;
+			border-radius: 6px;
+			box-shadow: 0 4px 18px rgba(31, 27, 22, 0.10);
+			display: block;
+		}
+		@media (max-width: 640px) {
+			.gallery { grid-template-columns: 1fr; }
+		}
+	</style>
+</Layout>

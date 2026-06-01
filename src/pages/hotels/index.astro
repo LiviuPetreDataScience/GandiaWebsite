@@ -1,0 +1,121 @@
+---
+import Layout from '../../layouts/Layout.astro';
+---
+
+<Layout
+	lang="en"
+	title="Hotels & apartments — Gandía, summer 2026"
+	description="We search hotels, apartments and casas rurales for you for summer 2026 — by your budget and your preferred area. Tell us your range and where you'd love to wake up; we shortlist, you pick, we book."
+	otherLangHref="/es/hoteles/"
+	otherLangLabel="Español"
+>
+	<p class="eyebrow">Hotels & apartments</p>
+	<h1>Where you'll <span class="accent">stay</span></h1>
+	<p class="tagline">
+		Tell us your budget and where you'd love to wake up — we search,
+		shortlist and book.
+	</p>
+
+	<p>
+		Hotels, apartments, <em>casas rurales</em>, villas, family resorts —
+		the right place depends on two things: <strong>where you want your
+		days to start</strong>, and <strong>what you want to spend</strong>.
+		Tell us those two, and <strong>we'll search for you</strong> —
+		comparing what's available for your dates, talking to the houses we
+		know, putting together two or three options that fit. You pick; we
+		book the room and handle the rest.
+	</p>
+
+	<h2 class="zone-heading">Where we look</h2>
+
+	<div class="zone-grid">
+		<article class="zone-card">
+			<h3>Playa de Gandía</h3>
+			<p>Beachfront apartments and family resorts on the long sandy bay — soft sand, palm-lined promenade, the easiest base for a beach week.</p>
+		</article>
+		<article class="zone-card">
+			<h3>Gandía old town</h3>
+			<p>Small boutique hotels around the Palau Ducal — walkable, full of cafés, evening life that runs late.</p>
+		</article>
+		<article class="zone-card">
+			<h3>The calas — Xàbia, Moraira, Calpe, Altea</h3>
+			<p>Villas and apartments tucked above the coves — cliffs, pines, turquoise water at the bottom of the road.</p>
+		</article>
+		<article class="zone-card">
+			<h3>Inland Marina Alta</h3>
+			<p><em>Casas rurales</em> and small mountain inns in Bocairent, the Vall de Gallinera, Tàrbena — cooler nights, real stars, hiking from the doorstep.</p>
+		</article>
+		<article class="zone-card">
+			<h3>Benidorm</h3>
+			<p>Big family-friendly resorts on Playa de Levante — half an hour down the coast, kids' pools, all-inclusive options.</p>
+		</article>
+		<article class="zone-card">
+			<h3>Valencia city</h3>
+			<p>Boutique stays in the old quarter — an hour by train from Gandía, ideal for a city night before or after the coast.</p>
+		</article>
+	</div>
+
+	<p>
+		<strong>We work to any budget.</strong> From comfortable family
+		apartments and resorts at the lower end, through boutique hotels and
+		characterful villas in the middle, to high-end seafront suites and
+		full villa rentals at the upper end. Tell us your range; we come back
+		with two or three options that fit, with honest notes on each.
+	</p>
+
+	<p class="signoff">
+		You don't book through a search engine, you book through someone who
+		knows the street.
+	</p>
+
+	<p class="cta-top">
+		<a class="cta" href="/#contact">Tell us what you'd like →</a>
+	</p>
+
+	<style>
+		.zone-heading {
+			font-family: Georgia, "Times New Roman", serif;
+			font-size: clamp(1.4rem, 2.6vw, 1.85rem);
+			font-weight: 700;
+			letter-spacing: -0.01em;
+			margin: 2.8rem 0 1.4rem;
+			color: var(--accent);
+			text-align: center;
+		}
+		.zone-grid {
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+			gap: 1.1rem;
+			margin: 0 0 2.6rem;
+		}
+		.zone-card {
+			background: var(--paper);
+			border: 1px solid var(--rule);
+			border-radius: 10px;
+			padding: 1.4rem 1.4rem 1.2rem;
+			box-shadow: 0 2px 12px rgba(31, 27, 22, 0.06);
+			transition: transform 0.2s ease, box-shadow 0.2s ease;
+		}
+		.zone-card:hover {
+			transform: translateY(-3px);
+			box-shadow: 0 10px 26px rgba(31, 27, 22, 0.12);
+		}
+		.zone-card h3 {
+			font-family: Georgia, "Times New Roman", serif;
+			font-size: 1.12rem;
+			font-weight: 700;
+			margin: 0 0 0.5rem;
+			letter-spacing: -0.01em;
+			color: var(--ink);
+		}
+		.zone-card p {
+			font-size: 0.95rem;
+			color: var(--muted);
+			margin: 0;
+			line-height: 1.55;
+		}
+		@media (max-width: 640px) {
+			.zone-grid { grid-template-columns: 1fr; }
+		}
+	</style>
+</Layout>

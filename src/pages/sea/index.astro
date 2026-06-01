@@ -1,0 +1,115 @@
+---
+import Layout from '../../layouts/Layout.astro';
+---
+
+<Layout
+	lang="en"
+	title="Sea destinations — Gandía 2026"
+	description="Coastal destinations on the Spanish Mediterranean for your eclipse holiday — Gandía, Valencia, Benidorm, the calas of the Marina Alta and the Costa Blanca."
+	otherLangHref="/es/mar/"
+	otherLangLabel="Español"
+>
+	<p class="eyebrow">Sea destinations</p>
+	<h1>By <span class="accent">the sea</span></h1>
+	<p class="tagline">
+		The Spanish Mediterranean coast — long beaches, warm shallow water,
+		fishing-town dinners that run late.
+	</p>
+
+	<p>
+		The most extraordinary part of this coast is the <strong>calas</strong> —
+		small, clear-water coves tucked between pine-covered cliffs, just south of
+		the main beaches. Their beauty is the unrepeatable kind, found in the
+		narrow places where <strong>the mountains drop straight into the
+		sea</strong>: a single bend in the road, a footpath through the pines,
+		then a turquoise crescent caught between two ridges. Cala Granadella, near
+		Xàbia, is the most famous of them; voted Spain's best beach more than
+		once. Snorkel along the rocks, paddle a kayak out to the sea caves, hike
+		the cliff path for the view from above, picnic in the shade of the pines,
+		or eat at the chiringuito above the cove. We organise the gear, the
+		boats, the picnic, the table.
+	</p>
+
+	<p>
+		The calas are only half of this coast. The other half is the
+		opposite of hidden: kilometre after kilometre of
+		<strong>fine, pale-gold sand</strong> running flat and straight from
+		Gandía south through Daimús, Piles and Oliva, and on toward Dénia.
+		The water shelves so gently you can wade out fifty metres and still
+		touch bottom; the sand is soft enough to cross barefoot at midday.
+		In places the beach is backed by <strong>protected dunes</strong> —
+		wooden walkways, marram grass, almost no buildings in sight. These
+		are the beaches for long afternoons, long walks, long evenings.
+	</p>
+
+	<div class="gallery gallery-3">
+		<figure>
+			<img src="/images/sand-01.jpg" alt="A long, wide sandy beach with low waves rolling in, apartment buildings lining the promenade in the distance." />
+		</figure>
+		<figure>
+			<img src="/images/sand-02.jpg" alt="Pale-gold sand and shallow turquoise water curving toward a city silhouetted in the distance." />
+		</figure>
+		<figure>
+			<img src="/images/sand-03.jpg" alt="A wide sandy beach under a moody clouded sky, a few people walking at the water's edge." />
+		</figure>
+	</div>
+
+	<p>
+		Beyond Granadella, the coast holds dozens more — <strong>wild</strong>
+		calas reached only on foot, <strong>busy</strong> resort beaches with
+		their own particular charm, working harbours, long ribbons of
+		dune-backed sand. The pictures below are from our own walks along this
+		stretch. We've left the place names off on purpose. <strong>Ask us
+		where they are</strong> — and we'll take you there.
+	</p>
+
+	<div class="gallery">
+		<figure>
+			<img src="/images/sea-01.jpg" alt="A rocky cove backed by tall limestone cliffs on the Mediterranean, a couple walking a dog across the stones." />
+		</figure>
+		<figure>
+			<img src="/images/sea-02.jpg" alt="Whitewashed villas rising above a turquoise bay, seen from a clifftop above the water." />
+		</figure>
+		<figure>
+			<img src="/images/sea-03.jpg" alt="A sailboat run aground on a low rocky shoreline, leaning over against a clear blue sky." />
+		</figure>
+		<figure>
+			<img src="/images/sea-04.jpg" alt="A pine-covered headland rising across a calm Mediterranean bay." />
+		</figure>
+		<figure>
+			<img src="/images/sea-05.jpg" alt="A seagull flying above a small red-and-white lighthouse at the end of a stone breakwater." />
+		</figure>
+		<figure>
+			<img src="/images/sea-06.jpg" alt="A working harbour backed by a long ridge of mountains under a partly clouded sky." />
+		</figure>
+		<figure>
+			<img src="/images/sea-07.jpg" alt="Sunrise over the Mediterranean — the sun breaking through a low band of clouds above the horizon, golden light spilling across the foaming waves." />
+		</figure>
+		<figure>
+			<img src="/images/sea-08.jpg" alt="A pink and lavender sunset on the beach, the sky streaked with pastel clouds reflected in a winding tidal stream cutting across the wide sand." />
+		</figure>
+	</div>
+
+	<style>
+		.gallery {
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+			gap: 0.9rem;
+			margin: 2.6rem 0;
+		}
+		.gallery-3 { grid-template-columns: repeat(3, 1fr); }
+		.gallery figure { margin: 0; }
+		.gallery img {
+			width: 100%;
+			height: 100%;
+			aspect-ratio: 4 / 3;
+			object-fit: cover;
+			border-radius: 6px;
+			box-shadow: 0 4px 18px rgba(31, 27, 22, 0.10);
+			display: block;
+		}
+		@media (max-width: 640px) {
+			.gallery { grid-template-columns: 1fr; }
+		}
+	</style>
+</Layout>

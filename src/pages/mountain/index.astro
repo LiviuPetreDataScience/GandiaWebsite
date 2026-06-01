@@ -1,0 +1,111 @@
+---
+import Layout from '../../layouts/Layout.astro';
+---
+
+<Layout
+	lang="en"
+	title="Mountain destinations — Gandía 2026"
+	description="Inland destinations behind the Costa Blanca — Aitana, Bèrnia, Mariola, road cycling and mountain trails, whitewashed villages and quiet sierras."
+	otherLangHref="/es/montana/"
+	otherLangLabel="Español"
+>
+	<p class="eyebrow">Mountain destinations</p>
+	<h1>Into <span class="accent">the mountains</span></h1>
+	<p class="tagline">
+		The quiet sierras behind the Costa Blanca — rock-perched villages, cooler
+		evenings, real stars overhead.
+	</p>
+
+	<figure class="hero">
+		<img src="/images/mountain-02.jpg" alt="A view from a mountain pass over a green valley to a peaked sierra in the middle distance, with the Mediterranean coast visible in the far background under a cloudy sky." />
+	</figure>
+
+	<p>
+		The Costa Blanca's inland is a stack of limestone sierras —
+		<strong>Aitana, Bèrnia, Serrella, Mariola, Montgó</strong> — rising sharp
+		behind the coast and falling away in long terraced valleys. Roads
+		switchback up to whitewashed villages where life still slows to the
+		rhythm of bread and the almond harvest. Stone is everywhere: in the
+		houses, in the dry-stone walls climbing the hillsides, in the peaks
+		themselves. And in places — Montgó, Bèrnia, the Cumbre del Sol —
+		<strong>the mountains drop straight into the sea</strong>, carving out
+		the cliff towns, the headlands and the hidden calas that make this coast
+		unrepeatable. From the high passes, on a clear day, you can see the
+		whole length of it.
+	</p>
+
+	<div class="gallery gallery-3">
+		<figure>
+			<img src="/images/mountain-01.jpg" alt="A whitewashed village with a church tower clustered at the foot of a tall grey limestone ridge, terraced fields and orchards below." />
+		</figure>
+		<figure>
+			<img src="/images/mountain-06.jpg" alt="A young person sitting on a stone outcrop at a summit, looking out over forested ridges and valleys receding into a hazy distance." />
+		</figure>
+		<figure>
+			<img src="/images/mountain-07.jpg" alt="A turquoise bay curving toward a coastal town at dusk, a red rocky headland in the foreground, mountains silhouetted on the horizon." />
+		</figure>
+	</div>
+
+	<p>
+		For <strong>road cyclists</strong>, this is one of Europe's best winters
+		of riding — long warm climbs over Coll de Rates, Puerto de Tudons and
+		the back roads to Famorca and Confrides, empty asphalt and half-hour
+		descents. <strong>Mountain biking</strong> takes to the limestone tracks
+		above Dénia and Pego. <strong>Walkers</strong> have endless marked GR
+		and PR trails between the villages, summit paths that reward the climb
+		with the whole coast at your feet, and the <strong>trail-running</strong>
+		calendar puts on a race somewhere in the sierras most weekends in
+		spring and autumn.
+	</p>
+
+	<div class="gallery">
+		<figure>
+			<img src="/images/mountain-03.jpg" alt="An aerial view of a marina packed with white yachts, a coastal town and hazy mountain ridges receding into the distance." />
+		</figure>
+		<figure>
+			<img src="/images/mountain-04.jpg" alt="A high panorama over the bay of Calpe — the Peñón de Ifach rock on the left, a rounded headland on the right, the city spread between them, the Mediterranean glittering below." />
+		</figure>
+		<figure>
+			<img src="/images/mountain-05.jpg" alt="A wide blue sea horizon seen from a clifftop high above the coast — towns clinging to the cliffs left and right, sparse green shrub in the foreground." />
+		</figure>
+		<figure>
+			<img src="/images/mountain-08.jpg" alt="A walker on a rocky summit reading an interpretation panel — a vast cloudscape above, sierras receding to the horizon and a coastal town spread out far below." />
+		</figure>
+	</div>
+
+	<p>
+		And then the villages themselves — <strong>Bocairent</strong>,
+		<strong>Guadalest</strong>, <strong>Vall de Gallinera</strong>,
+		<strong>Tàrbena</strong>, <strong>Castell de Castells</strong>. Small,
+		kept, lived-in. Tiny family restaurants where the cook is the owner and
+		the day's menu fits on a chalkboard: <strong>olleta</strong> with
+		mountain beans, <strong>arròs caldós</strong> with rabbit and rosemary,
+		<strong>embotits</strong> cured in the village, almond cake, the sweet
+		wines of Xaló. Real food, made the way it's always been made.
+		<strong>Tell us what you want to ride, walk or eat</strong> — we'll plan
+		the route, the picnic, the table, the bed.
+	</p>
+
+	<style>
+		.gallery {
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+			gap: 0.9rem;
+			margin: 2.6rem 0;
+		}
+		.gallery-3 { grid-template-columns: repeat(3, 1fr); }
+		.gallery figure { margin: 0; }
+		.gallery img {
+			width: 100%;
+			height: 100%;
+			aspect-ratio: 4 / 3;
+			object-fit: cover;
+			border-radius: 6px;
+			box-shadow: 0 4px 18px rgba(31, 27, 22, 0.10);
+			display: block;
+		}
+		@media (max-width: 640px) {
+			.gallery { grid-template-columns: 1fr; }
+		}
+	</style>
+</Layout>
