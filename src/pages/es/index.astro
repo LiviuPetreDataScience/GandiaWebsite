@@ -13,7 +13,7 @@ import Layout from '../../layouts/Layout.astro';
 		<img class="hero-bg" src="/images/cala-advocat.jpg" alt="Primer plano de un corazón dibujado en la arena suave de la playa con un pequeño garabato trazado dentro — una mañana tranquila y soleada en la orilla." />
 		<div class="hero-scrim"></div>
 		<div class="hero-content">
-			<p class="hero-eyebrow">Verano de 2026 · Costa mediterránea española · EN · RO · ES</p>
+			<p class="hero-eyebrow">Verano de 2026 · Costa mediterránea española · EN · ES</p>
 			<h1 class="hero-title">Gandía <span class="accent">y el Mediterráneo</span></h1>
 			<p class="hero-subtitle">
 				Conocemos esta costa — las playas, las calas, los pueblos de
@@ -22,8 +22,8 @@ import Layout from '../../layouts/Layout.astro';
 				<strong>te damos la información, planificamos los días, te devolvemos el tiempo.</strong>
 			</p>
 			<div class="hero-actions">
-				<a class="hero-cta" href="#contact">Planifica mi viaje →</a>
-				<a class="hero-scroll" href="#how-we-work">Cómo trabajamos ↓</a>
+				<a class="hero-cta" href="/es/contacto/#trip">Planifica mi viaje →</a>
+				<a class="hero-scroll" href="#help-with">Cómo trabajamos ↓</a>
 			</div>
 		</div>
 	</section>
@@ -44,46 +44,66 @@ import Layout from '../../layouts/Layout.astro';
 				terraza en alto — y si prefieres no conducir esa tarde, te llevamos
 				nosotros.
 			</p>
-			<a class="es-cta" href="#contact">Reserva tu tarde de eclipse →</a>
+			<a class="es-cta" href="/es/contacto/">Reserva tu tarde de eclipse →</a>
 		</div>
 	</aside>
+
+	<div class="hww-services reveal" id="help-with">
+		<h3 class="hww-services-heading">En qué podemos ayudarte</h3>
+		<ul class="hww-services-list">
+			<li>Alquiler de coche</li>
+			<li>Alquiler de cruceros</li>
+			<li>Reserva de hotel</li>
+			<li>Traslados desde el aeropuerto hasta tu alojamiento</li>
+			<li>Itinerarios a medida</li>
+			<li>Recomendaciones y reservas de restaurantes</li>
+			<li>Rutas turísticas</li>
+			<li>Rutas de ciclismo de carretera</li>
+			<li>Entradas a conciertos</li>
+			<li>Y otras actividades locales — solo pídenoslo</li>
+		</ul>
+		<p class="hww-contact-line">
+			Contáctanos por
+			<a href="https://wa.me/34660740397" rel="noopener">WhatsApp</a>
+			o por
+			<a href="mailto:luizamalik@yahoo.com">correo</a>. Estamos disponibles 24/7.
+		</p>
+		<p class="hww-services-cta">
+			<a class="cta" href="/es/servicios/">Ver nuestros servicios y condiciones →</a>
+		</p>
+	</div>
 
 	<section class="how-we-work reveal" id="how-we-work" aria-labelledby="hww-heading">
 		<h2 id="hww-heading" class="hww-heading">Cómo trabajamos</h2>
 		<div class="hww-grid">
 			<article class="hww-card">
-				<div class="hww-step">1</div>
-				<h3>Tú nos cuentas</h3>
+				<div class="hww-card-head">
+					<div class="hww-step">1</div>
+					<h3>Tú nos cuentas</h3>
+				</div>
 				<p>Tus fechas, quiénes venís, qué te gustaría — días lentos de playa, rutas por la montaña, el eclipse, plan en familia, algún rincón tranquilo.</p>
 			</article>
 			<article class="hww-card">
-				<div class="hww-step">2</div>
-				<h3>Te contamos lo que sabemos</h3>
-				<p>La playa que mejor encaja con vosotros, el restaurante del día, dónde colocarte para ver el eclipse y las Perseidas a mediados de agosto, el tiempo que esperar, qué saltarse.</p>
+				<div class="hww-card-head">
+					<div class="hww-step">2</div>
+					<h3>Te contamos lo que sabemos</h3>
+				</div>
+				<p>La playa que mejor encaja con vosotros, los mejores restaurantes, dónde ver el eclipse, qué ver y qué saltarse.</p>
 			</article>
 			<article class="hww-card">
-				<div class="hww-step">3</div>
-				<h3>Recuperas tu tiempo</h3>
-				<p>Alojamiento, traslados, reservas y el plan día a día. Tú llegas — nosotros nos encargamos de la logística.</p>
+				<div class="hww-card-head">
+					<div class="hww-step">3</div>
+					<h3>Tú reservas; nosotros seguimos cerca</h3>
+				</div>
+				<p>Desde el día que llegas, estamos disponibles para ti durante todo el viaje — aconsejándote, traduciendo, resolviendo los pequeños inconvenientes, echándote una mano cuando lo necesites. En WhatsApp 24/7.</p>
 			</article>
-		</div>
-
-		<div class="hww-services reveal">
-			<h3 class="hww-services-heading">En qué podemos ayudarte</h3>
-			<ul class="hww-services-list">
-				<li>Alquiler de coche</li>
-				<li>Alquiler de cruceros</li>
-				<li>Reserva de hotel</li>
-				<li>Traslados desde el aeropuerto hasta tu alojamiento</li>
-				<li>Itinerarios a medida</li>
-				<li>Recomendaciones y reservas de restaurantes</li>
-				<li>Rutas turísticas</li>
-				<li>Rutas de ciclismo de carretera</li>
-				<li>Entradas a conciertos</li>
-				<li>Y otras actividades locales — solo pídenoslo</li>
-			</ul>
-			<p class="hww-24-7"><strong>Hablamos inglés, rumano y español.</strong></p>
-			<p class="hww-24-7"><strong>Y estamos disponibles 24/7.</strong></p>
+			<article class="hww-card">
+				<div class="hww-card-head">
+					<div class="hww-step">4</div>
+					<h3>Contamos contigo</h3>
+				</div>
+				<p>Esperamos que nuestra ayuda haga tu viaje más fácil — y contamos con tu apoyo para seguir adelante. Si te hemos sido útiles, apóyanos en <a class="hww-kofi-link" href="https://ko-fi.com/luiza82" rel="noopener" target="_blank">Ko-fi →</a></p>
+			</article>
 		</div>
 	</section>
 
@@ -623,7 +643,7 @@ import Layout from '../../layouts/Layout.astro';
 
 		/* How we work */
 		.how-we-work {
-			margin: 0 0 4rem;
+			margin: 3.5rem 0 4rem;
 		}
 		.hww-heading {
 			font-family: Georgia, "Times New Roman", serif;
@@ -636,14 +656,22 @@ import Layout from '../../layouts/Layout.astro';
 		}
 		.hww-grid {
 			display: grid;
-			grid-template-columns: repeat(3, 1fr);
+			grid-template-columns: repeat(2, 1fr);
 			gap: 1.2rem;
 		}
+		.hww-kofi-link {
+			color: var(--accent);
+			font-weight: 700;
+			text-decoration: none;
+			border-bottom: 1.5px solid var(--accent-soft);
+			white-space: nowrap;
+		}
+		.hww-kofi-link:hover { border-bottom-color: var(--accent); }
 		.hww-card {
 			background: var(--paper);
 			border: 1px solid var(--rule);
 			border-radius: 12px;
-			padding: 1.9rem 1.6rem 1.7rem;
+			padding: 1.3rem 1.5rem 1.3rem;
 			box-shadow: 0 2px 14px rgba(31, 27, 22, 0.07);
 			transition: transform 0.22s ease, box-shadow 0.22s ease;
 		}
@@ -651,28 +679,36 @@ import Layout from '../../layouts/Layout.astro';
 			transform: translateY(-4px);
 			box-shadow: 0 14px 32px rgba(31, 27, 22, 0.14);
 		}
+		.hww-card-head {
+			display: flex;
+			align-items: center;
+			gap: 0.8rem;
+			margin: 0 0 0.7rem;
+		}
 		.hww-step {
 			display: inline-flex;
 			align-items: center;
 			justify-content: center;
-			width: 2.4rem;
-			height: 2.4rem;
+			width: 2.1rem;
+			height: 2.1rem;
+			flex: 0 0 auto;
 			border-radius: 50%;
 			background: var(--accent);
 			color: #fff;
 			font-family: Georgia, "Times New Roman", serif;
 			font-weight: 700;
-			font-size: 1.12rem;
-			margin: 0 0 1rem;
+			font-size: 1rem;
+			margin: 0;
 			box-shadow: 0 6px 18px rgba(192, 104, 42, 0.32);
 		}
 		.hww-card h3 {
 			font-family: Georgia, "Times New Roman", serif;
-			font-size: 1.22rem;
+			font-size: 1.15rem;
 			font-weight: 700;
-			margin: 0 0 0.6rem;
+			margin: 0;
 			letter-spacing: -0.01em;
 			color: var(--ink);
+			line-height: 1.25;
 		}
 		.hww-card p {
 			font-size: 0.96rem;
@@ -683,6 +719,7 @@ import Layout from '../../layouts/Layout.astro';
 		.hww-services {
 			margin-top: 2.4rem;
 			padding: 1.8rem 2rem;
+			scroll-margin-top: 80px;
 			background: var(--paper);
 			border: 1px solid var(--rule);
 			border-radius: 12px;
@@ -727,6 +764,23 @@ import Layout from '../../layouts/Layout.astro';
 			font-style: italic;
 		}
 		.hww-24-7:last-child { margin-bottom: 0; }
+		.hww-contact-line {
+			text-align: center;
+			font-size: 1rem;
+			color: var(--ink);
+			margin: 1.2rem 0 0.4rem;
+		}
+		.hww-contact-line a {
+			color: var(--accent);
+			font-weight: 600;
+			text-decoration: none;
+			border-bottom: 1.5px solid var(--accent-soft);
+		}
+		.hww-contact-line a:hover { border-bottom-color: var(--accent); }
+		.hww-services-cta {
+			text-align: center;
+			margin: 1.2rem 0 0;
+		}
 		@media (max-width: 720px) {
 			.hww-services-list { grid-template-columns: 1fr; }
 		}

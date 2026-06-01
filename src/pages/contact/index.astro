@@ -1,0 +1,330 @@
+---
+import Layout from '../../layouts/Layout.astro';
+---
+
+<Layout
+	lang="en"
+	title="Contact — Gandía, summer 2026"
+	description="Get in touch about your summer 2026 holiday on Spain's Mediterranean coast — ask a quick question or share your trip plans so we can come back with recommendations."
+	otherLangHref="/es/contacto/"
+	otherLangLabel="Español"
+>
+	<p class="eyebrow">Contact</p>
+	<h1>Let's <span class="accent">talk</span></h1>
+	<p class="tagline">
+		A quick question, or planning a whole trip — pick the one that fits, and we'll come back to you.
+	</p>
+
+	<p class="contact-intro">
+		Fastest is <a href="https://wa.me/34660740397" rel="noopener">WhatsApp</a> or
+		<a href="mailto:luizamalik@yahoo.com">email</a> — we're on both 24/7. Or use one of
+		the forms below.
+	</p>
+
+	<div class="choice-cards">
+		<a class="choice-card" href="#question">
+			<span class="choice-eyebrow">Option 1</span>
+			<h2>Have a quick question?</h2>
+			<p>Send us a short message — we'll get back to you fast.</p>
+			<span class="choice-arrow">→</span>
+		</a>
+		<a class="choice-card" href="#trip">
+			<span class="choice-eyebrow">Option 2</span>
+			<h2>Planning a trip?</h2>
+			<p>Tell us a few things about your trip and we'll put together a plan.</p>
+			<span class="choice-arrow">→</span>
+		</a>
+	</div>
+
+	<section class="form-card" id="question">
+		<p class="form-eyebrow">Option 1 · Quick question</p>
+		<h2 class="form-heading">Ask us anything</h2>
+		<p class="form-intro">
+			Drop a short question and we'll write back. Best for one-offs — when to come,
+			how to get here, whether to rent a car, what the eclipse needs.
+		</p>
+
+		<form
+			name="contact-question"
+			method="POST"
+			action="/thanks/"
+			data-netlify="true"
+			netlify-honeypot="bot-field"
+			class="contact-form"
+		>
+			<input type="hidden" name="form-name" value="contact-question" />
+			<input type="hidden" name="language" value="en" />
+			<p class="netlify-honeypot">
+				<label>Don't fill this out if you're human: <input name="bot-field" /></label>
+			</p>
+
+			<label>
+				<span>Your name <em>*</em></span>
+				<input type="text" name="name" required autocomplete="name" />
+			</label>
+
+			<label>
+				<span>Email <em>*</em></span>
+				<input type="email" name="email" required autocomplete="email" />
+			</label>
+
+			<label>
+				<span>Your question <em>*</em></span>
+				<textarea name="question" rows="5" required></textarea>
+			</label>
+
+			<div class="form-actions">
+				<button type="submit" class="cta">Send →</button>
+			</div>
+		</form>
+	</section>
+
+	<section class="form-card" id="trip">
+		<p class="form-eyebrow">Option 2 · Plan my trip</p>
+		<h2 class="form-heading">Tell us about your trip</h2>
+		<p class="form-intro">
+			Share as much or as little as you like — every field below is optional except your
+			name and email. We'll come back with recommendations and a shape for the days.
+		</p>
+
+		<form
+			name="contact-trip"
+			method="POST"
+			action="/thanks/"
+			data-netlify="true"
+			netlify-honeypot="bot-field"
+			class="contact-form"
+		>
+			<input type="hidden" name="form-name" value="contact-trip" />
+			<input type="hidden" name="language" value="en" />
+			<p class="netlify-honeypot">
+				<label>Don't fill this out if you're human: <input name="bot-field" /></label>
+			</p>
+
+			<label>
+				<span>Your name <em>*</em></span>
+				<input type="text" name="name" required autocomplete="name" />
+			</label>
+
+			<label>
+				<span>Email <em>*</em></span>
+				<input type="email" name="email" required autocomplete="email" />
+			</label>
+
+			<label>
+				<span>When would you like to come?</span>
+				<textarea name="when" rows="2" placeholder="e.g. last week of July, or 12–22 August"></textarea>
+			</label>
+
+			<label>
+				<span>Tell us about your party</span>
+				<textarea name="party" rows="3" placeholder="How many of you, children and ages, anyone with mobility or accessibility needs…"></textarea>
+			</label>
+
+			<label>
+				<span>Hotel preferences</span>
+				<textarea name="hotel" rows="3" placeholder="Hotel or apartment, how many rooms, beachfront or quieter, bigger city or small village…"></textarea>
+			</label>
+
+			<label>
+				<span>Transportation</span>
+				<textarea name="transport" rows="3" placeholder="Airport pick-up, rental car, taxis, public transport — what works for you?"></textarea>
+			</label>
+
+			<label>
+				<span>What would you like to do or see?</span>
+				<textarea name="activities" rows="3" placeholder="Beach days, mountain villages, the eclipse, cycling, castles, food, the Perseids, a mix…"></textarea>
+			</label>
+
+			<label>
+				<span>Anything else that might help us?</span>
+				<textarea name="notes" rows="3" placeholder="Budget, dietary restrictions, languages spoken, things to avoid, anything special…"></textarea>
+			</label>
+
+			<div class="form-actions">
+				<button type="submit" class="cta">Send →</button>
+			</div>
+		</form>
+	</section>
+
+	<p class="signoff">Available 24/7 — English and Spanish.</p>
+
+	<style>
+		.contact-intro {
+			text-align: center;
+			font-size: 1.05rem;
+			color: var(--ink);
+			margin: 0 0 2.4rem;
+		}
+		.contact-intro a {
+			font-weight: 600;
+			text-decoration: none;
+			border-bottom: 1.5px solid var(--accent-soft);
+		}
+		.contact-intro a:hover { border-bottom-color: var(--accent); }
+
+		.choice-cards {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			gap: 1.2rem;
+			margin: 0 0 3.4rem;
+		}
+		.choice-card {
+			display: flex;
+			flex-direction: column;
+			gap: 0.5rem;
+			padding: 1.4rem 1.5rem 1.8rem;
+			background: var(--paper);
+			border: 1px solid var(--rule);
+			border-radius: 12px;
+			text-decoration: none;
+			color: var(--ink);
+			box-shadow: 0 2px 14px rgba(31, 27, 22, 0.07);
+			position: relative;
+			transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
+		}
+		.choice-card:hover {
+			transform: translateY(-3px);
+			box-shadow: 0 14px 32px rgba(31, 27, 22, 0.14);
+			border-color: var(--accent-soft);
+		}
+		.choice-eyebrow {
+			text-transform: uppercase;
+			letter-spacing: 0.18em;
+			font-size: 0.75rem;
+			font-weight: 700;
+			color: var(--accent);
+		}
+		.choice-card h2 {
+			font-family: Georgia, "Times New Roman", serif;
+			font-size: 1.3rem;
+			font-weight: 700;
+			margin: 0;
+			letter-spacing: -0.01em;
+			color: var(--ink);
+		}
+		.choice-card p {
+			font-size: 0.95rem;
+			color: var(--muted);
+			margin: 0;
+			line-height: 1.5;
+		}
+		.choice-arrow {
+			position: absolute;
+			right: 1.3rem;
+			bottom: 1.1rem;
+			color: var(--accent);
+			font-size: 1.3rem;
+			font-weight: 700;
+			transition: transform 0.18s ease;
+		}
+		.choice-card:hover .choice-arrow { transform: translateX(4px); }
+
+		.form-card {
+			background: var(--paper);
+			border: 1px solid var(--rule);
+			border-left: 4px solid var(--accent);
+			border-radius: 12px;
+			padding: 2rem 2rem 2.2rem;
+			margin: 0 0 2.4rem;
+			box-shadow: 0 2px 14px rgba(31, 27, 22, 0.07);
+			scroll-margin-top: 90px;
+		}
+		.form-eyebrow {
+			text-transform: uppercase;
+			letter-spacing: 0.2em;
+			font-size: 0.78rem;
+			font-weight: 700;
+			color: var(--accent);
+			margin: 0 0 0.6rem;
+		}
+		.form-heading {
+			font-family: Georgia, "Times New Roman", serif;
+			font-size: 1.55rem;
+			font-weight: 700;
+			margin: 0 0 0.7rem;
+			letter-spacing: -0.01em;
+			color: var(--ink);
+		}
+		.form-intro {
+			color: var(--muted);
+			font-size: 0.98rem;
+			margin: 0 0 1.6rem;
+		}
+
+		.contact-form {
+			display: flex;
+			flex-direction: column;
+			gap: 1.1rem;
+		}
+		.netlify-honeypot {
+			position: absolute;
+			left: -10000px;
+			top: auto;
+			width: 1px;
+			height: 1px;
+			overflow: hidden;
+		}
+		.contact-form label {
+			display: flex;
+			flex-direction: column;
+			gap: 0.45rem;
+		}
+		.contact-form label span {
+			font-size: 0.9rem;
+			font-weight: 600;
+			color: var(--ink);
+			letter-spacing: 0.01em;
+		}
+		.contact-form label span em {
+			color: var(--accent);
+			font-style: normal;
+			font-weight: 700;
+			margin-left: 0.15rem;
+		}
+		.contact-form input,
+		.contact-form textarea {
+			font-family: inherit;
+			font-size: 1rem;
+			color: var(--ink);
+			background: var(--bg);
+			border: 1px solid var(--rule);
+			border-radius: 8px;
+			padding: 0.7rem 0.85rem;
+			transition: border-color 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
+		}
+		.contact-form textarea {
+			resize: vertical;
+			min-height: 4.5rem;
+			line-height: 1.5;
+		}
+		.contact-form input:focus,
+		.contact-form textarea:focus {
+			outline: none;
+			border-color: var(--accent);
+			background: var(--paper);
+			box-shadow: 0 0 0 3px rgba(192, 104, 42, 0.16);
+		}
+		.contact-form input::placeholder,
+		.contact-form textarea::placeholder {
+			color: var(--soft);
+			opacity: 0.85;
+		}
+		.form-actions {
+			margin-top: 0.4rem;
+			text-align: right;
+		}
+		.form-actions .cta {
+			cursor: pointer;
+			border: none;
+			font-family: inherit;
+		}
+
+		@media (max-width: 640px) {
+			.choice-cards { grid-template-columns: 1fr; }
+			.form-card { padding: 1.5rem 1.3rem 1.7rem; }
+			.form-actions { text-align: center; }
+			.form-actions .cta { width: 100%; }
+		}
+	</style>
+</Layout>
